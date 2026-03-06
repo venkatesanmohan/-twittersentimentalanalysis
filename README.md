@@ -12,6 +12,7 @@ There are some general library requirements for the project and some which are s
 * `scikit-learn`
 * `scipy`
 * `nltk`
+* 'matplotlib'
 
 The library requirements specific to some methods are:
 * `keras` with `TensorFlow` backend for Logistic Regression, MLP, RNN (LSTM), and CNN.
@@ -63,7 +64,7 @@ For all the methods that follow, change the values of `TRAIN_PROCESSED_FILE`, `T
 ### Majority Vote Ensemble
 13. To extract penultimate layer features for the training dataset, run `extract-cnn-feats.py <saved-model>`. This will generate 3 files, `train-feats.npy`, `train-labels.txt` and `test-feats.npy`.
 14. Run `cnn-feats-svm.py` which uses files from the previous step to perform SVM classification on features extracted from CNN model.
-15. Place all prediction CSV files for which you want to take majority vote in `./results/` and run `majority-voting.py`. This will generate `majority-voting.csv`.
+15. Place all prediction CSV files for which you want to take majority vote in `./results/` and run `majority-voting.py`. This will generate `majority-voting.csv`. to generatye analysis..
 
 ## Information about other files
 
