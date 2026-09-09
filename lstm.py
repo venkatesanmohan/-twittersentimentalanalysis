@@ -9,6 +9,7 @@ import utils
 from keras.preprocessing.sequence import pad_sequences
 
 # Performs classification using LSTM network.
+# check git demo
 
 FREQ_DIST_FILE = '../train-processed-freqdist.pkl'
 BI_FREQ_DIST_FILE = '../train-processed-freqdist-bi.pkl'
